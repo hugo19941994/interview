@@ -1,0 +1,111 @@
+[
+  {
+    "name": "DiverXO",
+    "location": "NH Eurobuilding, Calle de Padre Damián, 23, 28036 Madrid",
+    "phone": "+34 915 70 07 66",
+    "rating": "4.4",
+    "website": "http://www.diverxo.com/"
+  },
+  {
+    "name": "San Mamés",
+    "location": "Calle de Bravo Murillo, 88, 28003 Madrid",
+    "phone": "+34 915 34 50 65",
+    "rating": "4.2",
+    "website": ""
+  },
+  {
+    "name": "Kappo",
+    "location": "Calle de Bretón de los Herreros, 54, 28003 Madrid",
+    "phone": "+34 910 42 00 66",
+    "rating": "4.5",
+    "website": "http://kappo.es/"
+  },
+  {
+    "name": "Sala de Despiece",
+    "location": "Calle de Ponzano, 11, 28010 Madrid",
+    "phone": "+34 917 52 61 06",
+    "rating": "4.4",
+    "website": "http://www.saladedespiece.com/"
+  },
+  {
+    "name": "Tripea",
+    "location": "Mercado de Vallehermoso, Calle de Vallehermoso, 36, 28015 Madrid",
+    "phone": "918 28 69 47",
+    "rating": "4.4",
+    "website": ""
+  },
+  {
+    "name": "StreetXo",
+    "location": "Calle de Serrano, 52, 28001 Madrid",
+    "phone": "+34 915 31 98 84",
+    "rating": "4.4",
+    "website": "https://streetxo.com/madrid/"
+  },
+  {
+    "name": "Casa Dani",
+    "location": "Calle de Ayala, 28, 28001 Madrid",
+    "phone": "+34 915 75 59 25",
+    "rating": "4.5",
+    "website": "https://www.casadani.es/"
+  },
+  {
+    "name": "Misión Café",
+    "location": "Calle de los Reyes, 5, 28015 Madrid",
+    "phone": "910 64 00 59",
+    "rating": "4.5",
+    "website": "http://www.mision.cafe/"
+  },
+  {
+    "name": "1862 Dry Bar",
+    "location": "Calle del Pez, 27, 28004 Madrid",
+    "phone": "+34 609 53 11 51",
+    "rating": "4.5",
+    "website": "https://www.facebook.com/1862DryBar"
+  },
+  {
+    "name": "Bodega de la Ardosa",
+    "location": "Calle de Colón, 13, 28004 Madrid",
+    "phone": "+34 915 21 49 79",
+    "rating": "4.3",
+    "website": "http://www.laardosa.es/"
+  },
+  {
+    "name": "El Cisne Azul",
+    "location": "Calle de Gravina, 19, 28004 Madrid",
+    "phone": "+34 911 12 90 80",
+    "rating": "4.2",
+    "website": ""
+  },
+  {
+    "name": "Angelita",
+    "location": "Calle de la Reina, 4, 28004 Madrid",
+    "phone": "915 21 66 78",
+    "rating": "4.7",
+    "website": "http://madrid-angelita.es/"
+  },
+  {
+    "name": "Sacha",
+    "location": "11, Calle de Juan Hurtado de Mendoza, 28036 Madrid",
+    "phone": "+34 913 45 59 52",
+    "rating": "4.6",
+    "website": "http://www.restaurantesacha.com/"
+  },
+  {
+    "name": "El Columpio",
+    "location": "C. de Caracas, 10, 28010 Madrid",
+    "rating": "4.0",
+    "website": "https://elcolumpiomadrid.com/"
+  },
+  {
+    "name": "Yakiniku Rikyu",
+    "location": "P.º de la Castellana, 15, 28046 Madrid",
+    "rating": "4.6",
+    "website": "https://yakinikurikyu.es/"
+  },
+  {
+    "name": "Numa Pompilio",
+    "location": "C. de Velázquez, 18, 28001 Madrid",
+    "rating": "4.2",
+    "website": "https://restaurantenuma.com/"
+  }
+]
