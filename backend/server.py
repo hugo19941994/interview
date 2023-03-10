@@ -19,7 +19,7 @@ def pois():
         - In any other case, rating should be "Muy bueno"
     Then return the transformed data
     """
-    return {}
+    return None
 
 if __name__ == "__main__":
     # Executing will make the API available in 
