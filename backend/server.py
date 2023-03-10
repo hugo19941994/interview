@@ -23,5 +23,5 @@ def pois():
 
 if __name__ == "__main__":
     # Executing will make the API available in 
-    # localhost:5000
-    app.run()
+    # localhost:5000/pois
+    app.run(debug=True)
