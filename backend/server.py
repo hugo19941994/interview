@@ -19,7 +19,16 @@ def pois():
         - In any other case, rating should be "Muy bueno"
     Then return the transformed data
     """
-    return None
+    fichero = open("pois.json")
+    data = json.load(fichero)
+    for elem in data:
+
+        if float(elem["rating"]) > 4.5:
+            elem["rating"] = "Excelente"
+        else:
+            elem["rating"] = "Muy bueno"
+
+    return data
 
 if __name__ == "__main__":
     # Executing will make the API available in 

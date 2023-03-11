@@ -1,7 +1,8 @@
 import {useState, useEffect} from "react";
 import './Exercise.css';
+import Card from "./Card";
 
-function RightPanel() {
+function RightPanel({filtro}) {
   const [cards, setCards] = useState([]);
 
   async function getData() {
@@ -10,6 +11,9 @@ function RightPanel() {
      * Create one "card" per element in the response
      * Call SetCards with the elements to update the view
      * */
+    fetch("http://127.0.0.1:5000/pois")
+    .then(res=>res.json())
+    .then(data=>{setCards(data)})
   }
   
   useEffect(() => {
@@ -18,22 +22,30 @@ function RightPanel() {
 
   return (
     <div id="RightPanel" className="SubPanel">
-      { cards }
+      <p>Number of results:
+      {/* Para sacar el número de resultados */}
+      {filtro === "Todos" && <span>{cards.length}</span>}
+      {filtro === "Excelente" && <span>{cards.filter(card => card.rating == "Excelente").length}</span>}
+      {filtro === "Muy bueno" && <span>{cards.filter(card => card.rating == "Muy bueno").length}</span>}
+      </p>
+
+      {/* Para mostrar los resultados según el rating */}
+      {filtro === "Todos" && cards.map((card, index) => {
+        return <Card key={card.name + card.phone} name={card.name} location={card.location} phone={card.phone} rating={card.rating} website={card.website} />
+      })}
+
+      {filtro === "Excelente" && cards.filter(card => card.rating == "Excelente").map((card, index) => {
+        return <Card key={card.name + card.phone} name={card.name} location={card.location} phone={card.phone} rating={card.rating} website={card.website} />
+      })} 
+
+      {filtro === "Muy bueno" && cards.filter(card => card.rating == "Muy bueno").map((card, index) => {  
+        return <Card key={card.name + card.phone} name={card.name} location={card.location} phone={card.phone} rating={card.rating} website={card.website} />
+      })}
+
     </div>
   )
 }
 
-function Card(props) {
-  /*
-   * Render out a card class
-   *
-   * It should display the name, location,
-   * phone number, rating and a link to the website
-   *
-   * Some restaurants contain an empty website.
-   * Use conditional rendering to prevent displaying 
-   * the website in those cases
-   * */
-}
+
 
 export default RightPanel;
