@@ -14,7 +14,7 @@ const Card = ({name, location, phone, rating, website}) => {
          * */
       
         <div className="Card">
-        <h1 clasName="titulo">{name}</h1>
+        <h1 className="titulo">{name}</h1>
         <p className="localizacion">{location}</p>
         <p className="telefono">{phone}</p>
         <p className="rating">{rating}</p>

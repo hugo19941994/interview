@@ -72,3 +72,47 @@ a {
   color: white;
 }
 
+.botones-filtro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.boton-filtro {
+  background-color: #0e0e62;
+  border: 2px solid black;
+  padding: 10px;
+  margin: 20px;
+  color: white;
+  width: 100%;
+  text-align: center;
+  border-radius: 20px;
+  width: 150px;
+}
+
+.boton-filtro:hover{
+  background-color: #2020db;
+  border: 2px solid black;
+  padding: 10px;
+  margin: 20px;
+  color: white;
+  width: 100%;
+  text-align: center;
+  border-radius: 20px;
+  cursor: pointer;
+  width: 150px;
+}
+
+.boton-filtro-activado{
+  background-color: #2020db;
+  border: 2px solid black;
+  padding: 10px;
+  margin: 20px;
+  color: white;
+  width: 100%;
+  text-align: center;
+  border-radius: 20px;
+  cursor: pointer;
+  width: 150px;
+}
+

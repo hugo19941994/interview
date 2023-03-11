@@ -2,7 +2,7 @@ import {useState, useEffect} from "react";
 import './Exercise.css';
 import Card from "./Card";
 
-function RightPanel() {
+function RightPanel({filtro}) {
   const [cards, setCards] = useState([]);
 
   async function getData() {
@@ -22,15 +22,25 @@ function RightPanel() {
 
   return (
     <div id="RightPanel" className="SubPanel">
-      {cards.map((card, index) => {
+      <p>Number of results:
+      {/* Para sacar el número de resultados */}
+      {filtro === "Todos" && <span>{cards.length}</span>}
+      {filtro === "Excelente" && <span>{cards.filter(card => card.rating == "Excelente").length}</span>}
+      {filtro === "Muy bueno" && <span>{cards.filter(card => card.rating == "Muy bueno").length}</span>}
+      </p>
+
+      {/* Para mostrar los resultados según el rating */}
+      {filtro === "Todos" && cards.map((card, index) => {
         return <Card key={card.name + card.phone} name={card.name} location={card.location} phone={card.phone} rating={card.rating} website={card.website} />
       })}
 
-    {/* Si quisieramos mostrar sólo las cards son rating Excelente */}
-    {/* {cards.filter(card => card.rating === "Excelente").map((card, index) => {
+      {filtro === "Excelente" && cards.filter(card => card.rating == "Excelente").map((card, index) => {
         return <Card key={card.name + card.phone} name={card.name} location={card.location} phone={card.phone} rating={card.rating} website={card.website} />
-      })} */}
+      })} 
 
+      {filtro === "Muy bueno" && cards.filter(card => card.rating == "Muy bueno").map((card, index) => {  
+        return <Card key={card.name + card.phone} name={card.name} location={card.location} phone={card.phone} rating={card.rating} website={card.website} />
+      })}
 
     </div>
   )
